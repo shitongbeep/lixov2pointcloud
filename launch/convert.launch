@@ -1,0 +1,8 @@
+<launch>
+  <node name="convert_node" pkg="livox_convert" type="convert" output="screen">
+    <param name="imu_topic" type="string" value="/livox/imu"/>
+    <param name="lidar_topic" type="string" value="/livox/lidar"/>
+    <param name="input_bag" type="string" value="/home/shitong/datasets/2.bag"/>
+    <param name="output_bag" type="string" value="/home/shitong/datasets/2new.bag"/>
+  </node>
+</launch>
